@@ -1,6 +1,8 @@
 import "./App.css";
-import { ThemeContextProvider } from "./components/context/ThemeContext";
-import Box from "./components/context/Box";
+import User from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
+// import { ThemeContextProvider } from "./components/context/ThemeContext";
+// import Box from "./components/context/Box";
 // import Counter from "./components/state/Counter";
 // import Container from "./components/Container";
 // import User from "./components/state/User";
@@ -33,31 +35,11 @@ function App() {
   //   },
   // ];
   return (
-    <ThemeContextProvider>
+    <UserContextProvider>
       <div className="App">
-        {/* <Greet name="Nayzaw" messageCount={20} isLoggedin={false} />
-      <Person name={name} />
-      <PersonList names={names} /> */}
-        {/* <Greet name="Nayzaw" isLoggedin={true} />
-      <Status status="success" />
-      <Oscar>
-        <Heading>And the oscar goes to me</Heading>
-      </Oscar> */}
-        {/* <Button
-        handleClick={(e, number) => {
-          console.log("button Clicked", e.target, number);
-        }}
-      /> */}
-        {/* <Input
-        value="Hello nayzaw"
-        handleChange={(e) => console.log(`Hello ${e.target.value}`)}
-      /> */}
-        {/* <Container styles={{ padding: "1px", border: "1px solid black" }} /> */}
-        {/* <User /> */}
-        {/* <Counter /> */}
-        <Box />
+        <User />
       </div>
-    </ThemeContextProvider>
+    </UserContextProvider>
   );
 }
 

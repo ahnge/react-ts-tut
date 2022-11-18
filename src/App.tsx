@@ -1,6 +1,7 @@
 import "./App.css";
-import Private from "./components/auth/Private";
-import Profile from "./components/auth/Profile";
+import List from "./components/generic/List";
+// import Private from "./components/auth/Private";
+// import Profile from "./components/auth/Profile";
 // import User from "./components/context/User";
 // import { UserContextProvider } from "./components/context/UserContext";
 // import { ThemeContextProvider } from "./components/context/ThemeContext";
@@ -38,7 +39,11 @@ function App() {
   // ];
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={["batman", "joker", "harley"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
     </div>
   );
 }

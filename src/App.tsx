@@ -1,5 +1,6 @@
 import "./App.css";
-import List from "./components/generic/List";
+import Random from "./components/random/Random";
+// import List from "./components/generic/List";
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
 // import User from "./components/context/User";
@@ -39,11 +40,7 @@ function App() {
   // ];
   return (
     <div className="App">
-      <List
-        items={["batman", "joker", "harley"]}
-        onClick={(item) => console.log(item)}
-      />
-      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+      <Random number={0} isZero />
     </div>
   );
 }

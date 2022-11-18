@@ -1,6 +1,8 @@
 import "./App.css";
-import User from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
+// import User from "./components/context/User";
+// import { UserContextProvider } from "./components/context/UserContext";
 // import { ThemeContextProvider } from "./components/context/ThemeContext";
 // import Box from "./components/context/Box";
 // import Counter from "./components/state/Counter";
@@ -35,11 +37,9 @@ function App() {
   //   },
   // ];
   return (
-    <UserContextProvider>
-      <div className="App">
-        <User />
-      </div>
-    </UserContextProvider>
+    <div className="App">
+      <Private isLoggedIn={true} component={Profile} />
+    </div>
   );
 }
 

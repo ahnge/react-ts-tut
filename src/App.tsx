@@ -1,5 +1,6 @@
 import "./App.css";
-import Random from "./components/random/Random";
+import Toast from "./components/templatelaterals/Toast";
+// import Random from "./components/random/Random";
 // import List from "./components/generic/List";
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
@@ -40,7 +41,7 @@ function App() {
   // ];
   return (
     <div className="App">
-      <Random number={0} isZero />
+      <Toast position="center" />
     </div>
   );
 }

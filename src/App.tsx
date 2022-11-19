@@ -1,5 +1,7 @@
+import { isConditionalExpression } from "typescript";
 import "./App.css";
-import Toast from "./components/templatelaterals/Toast";
+import Button from "./components/html/Button";
+// import Toast from "./components/templatelaterals/Toast";
 // import Random from "./components/random/Random";
 // import List from "./components/generic/List";
 // import Private from "./components/auth/Private";
@@ -41,7 +43,9 @@ function App() {
   // ];
   return (
     <div className="App">
-      <Toast position="center" />
+      <Button varient="primaty" onClick={() => console.log("hello")}>
+        Primary btn
+      </Button>
     </div>
   );
 }
